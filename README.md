@@ -10,7 +10,4 @@ It has configurations like ESLint, Prettier, Git and many more.
 # Installation
 
 It is not officially published in npm but soon.
-
-```
-npm install -g git:https://www.github.com/memothelemo/wumpbot.git
-```
+**Update**: It does not work but I will try my best to find the solution of it. :D
