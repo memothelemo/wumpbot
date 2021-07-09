@@ -11,6 +11,7 @@
     "forceConsistentCasingInFileNames": true
   },
   "exclude": [
-    "templates"
+    "templates",
+    "archive"
   ]
 }

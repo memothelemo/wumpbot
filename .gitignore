@@ -1,3 +1,11 @@
+# unneccessary files to upload to GitHub
+archive
 node_modules
 out
+.env
+
+# yarn
+yarn.lock
+
+# typescript
 *.tsbuildinfo

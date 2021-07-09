@@ -1,15 +1,14 @@
 {
-  "name": "create-discord-bot",
-  "version": "1.0.0",
+  "name": "wumpbot",
+  "version": "0.0.1",
   "author": "memothelemo",
-  "main": "out/index.js",
   "license": "MIT",
   "bin": {
-    "create-discord-bot": "out/CLI/cli.js"
+    "wumpbot": "out/CLI/index.js"
   },
   "scripts": {
     "build": "tsc",
-    "test": "yarn build && npm link",
+    "devlink": "yarn build && npm link",
     "start": "node .",
     "prepublish": "yarn build"
   },
@@ -24,11 +23,14 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
+    "@types/dotenv": "^8.2.0",
     "@types/fs-extra": "^9.0.12",
     "@types/prompts": "^2.0.14",
     "@types/yargs": "^17.0.2",
-    "chalk": "^4.1.1",
+    "dotenv": "^10.0.0",
     "fs-extra": "^10.0.0",
+    "kleur": "^4.1.4",
+    "lookpath": "^1.2.1",
     "prompts": "^2.4.1",
     "yargs": "^17.0.1"
   }
