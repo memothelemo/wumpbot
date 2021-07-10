@@ -20,4 +20,9 @@ export const PackageManagerCommands: Record<
 		devInstall: "yarn add -D",
 		install: "yarn add",
 	},
+	[PackageManagers.PNPM]: {
+		initProject: "pnpm init -y",
+		devInstall: "pnpm add --D",
+		install: "pnpm add",
+	},
 };

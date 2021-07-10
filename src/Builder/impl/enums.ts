@@ -7,4 +7,5 @@ export enum InitMode {
 export enum PackageManagers {
 	NPM = "npm",
 	Yarn = "yarn",
+	PNPM = "pnpm",
 }
