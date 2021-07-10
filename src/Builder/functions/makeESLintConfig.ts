@@ -56,5 +56,8 @@ export async function makeESLintConfig(
 		];
 	}
 
-	await fs.outputFile(state.paths.eslintrc, JSON.stringify(eslintConfig));
+	await fs.outputFile(
+		state.paths.eslintrc,
+		JSON.stringify(eslintConfig, null, 4),
+	);
 }
