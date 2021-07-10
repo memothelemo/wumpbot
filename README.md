@@ -16,7 +16,7 @@ npm install -g wumpbot
 # Documentation
 
 To create a Discord bot with this package, type:
-`wumpbot --init` or `npx wumpbot --init` on your shell command
+`wumpbot create` or `npx wumpbot create` on your shell command
 
 Follow the instructions carefully and wait for a while to do
 some hardwork for you. Open your preferred code editor and do some stuff with it. It supports both TypeScript and JavaScript.

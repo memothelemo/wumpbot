@@ -22,7 +22,7 @@ export const PackageManagerCommands: Record<
 	},
 	[PackageManagers.PNPM]: {
 		initProject: "pnpm init -y",
-		devInstall: "pnpm add --D",
+		devInstall: "pnpm add -D",
 		install: "pnpm add",
 	},
 };

@@ -6,7 +6,7 @@ import { InitModesConstants } from "../../Shared/constants/modes";
 import identity from "../../Shared/functions/identity";
 
 export = identity<yargs.CommandModule<{}, InitCLIOptions>>({
-	command: "init",
+	command: "create",
 	describe: "Create a project",
 	builder: () =>
 		yargs
