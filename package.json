@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "author": "memothelemo",
   "license": "MIT",
+  "main": "out/CLI/index.js",
   "bin": {
     "wumpbot": "out/CLI/index.js"
   },
