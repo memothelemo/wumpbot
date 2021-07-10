@@ -7,5 +7,6 @@ export async function getExisitingPkgMngrs(): Promise<
 	return {
 		[PackageManagers.NPM]: true, // obviously
 		[PackageManagers.Yarn]: (await lookpath("yarn")) ? true : false,
+		[PackageManagers.PNPM]: (await lookpath("pnpm")) ? true : false,
 	};
 }
