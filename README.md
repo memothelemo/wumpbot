@@ -9,5 +9,14 @@ It has configurations like ESLint, Prettier, Git and many more.
 
 # Installation
 
-It is not officially published in npm but soon.
-**Update**: It does not work but I will try my best to find the solution of it. :D
+```
+npm install -g wumpbot
+```
+
+# Documentation
+
+To create a Discord bot with this package, type:
+`wumpbot --init` or `npx wumpbot --init` on your shell command
+
+Follow the instructions carefully and wait for a while to do
+some hardwork for you. Open your preferred code editor and do some stuff with it. It supports both TypeScript and JavaScript.

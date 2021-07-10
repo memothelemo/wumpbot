@@ -1,0 +1,6 @@
+{
+    "name": "wumpbot-dev",
+    "bin": {
+        "wumpbot-dev": "index.js"
+    }
+}

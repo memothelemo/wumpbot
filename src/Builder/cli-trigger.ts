@@ -1,6 +1,5 @@
 import prompts from "prompts";
 import yargs from "yargs";
-import { CLIError } from "../CLI/classes/error";
 import { CLIErrors, ErrorLogger } from "../Shared/constants/loggers";
 import { getExisitingPkgMngrs } from "../Shared/functions/getExistingPkgMngrs";
 import { buildProject } from "./build";
