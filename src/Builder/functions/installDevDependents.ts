@@ -24,6 +24,9 @@ const devDependencies = (options: BuildOptions) => {
 			);
 		}
 	}
+	if (options.nodemon) {
+		deps.push("nodemon");
+	}
 	return deps.join(" ");
 };
 

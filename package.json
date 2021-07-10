@@ -1,6 +1,6 @@
 {
   "name": "wumpbot",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "memothelemo",
   "license": "MIT",
   "main": "out/CLI/index.js",

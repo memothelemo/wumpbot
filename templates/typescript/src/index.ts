@@ -16,4 +16,4 @@ bot.commands = readCommands("Commands");
 loadEvents(bot);
 
 /* Logging in to Discord */
-bot.login(process.env.BOT_TOKEN);
+bot.login(process.env.TOKEN);

@@ -36,6 +36,12 @@ async function promptProjectConfig(options: InitCLIOptions) {
 			initial: true,
 		},
 		{
+			type: () => "confirm",
+			name: "nodemon",
+			message: "Configure Nodemon",
+			initial: true,
+		},
+		{
 			type: () => "password",
 			name: "token",
 			message: "Enter your bot token or press `enter` to ignore",
@@ -115,6 +121,7 @@ export async function executeInitCommand(
 		prettier: opt.prettier,
 		token: opt.token,
 		prefix: opt.prefix,
+		nodemon: opt.nodemon,
 		packageManager: opt.packageManager,
 		language: mode,
 	});

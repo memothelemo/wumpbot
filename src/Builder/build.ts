@@ -1,3 +1,4 @@
+import kleur from "kleur";
 import { commitGitRepo } from "./functions/commitGitRepo";
 import { copyTemplateFiles } from "./functions/copyTemplateFiles";
 import { initializeGit } from "./functions/initializeGit";
@@ -22,10 +23,27 @@ const STAGES = [
 	commitGitRepo,
 ];
 
+function afterBuildProject(state: BuilderState, options: BuildOptions) {
+	/* Constructing a paragraph */
+	const paragraph = [
+		"",
+		"Your new bot is now ready for testing and coding!",
+		"To get your bot online, type:",
+		`${kleur.yellow("npm run start")}`,
+	].join("\n");
+
+	/* Informing users that building process is now done */
+	state.logger.write("Done!");
+
+	console.log(paragraph);
+}
+
 export async function buildProject(state: BuilderState, options: BuildOptions) {
 	state.logger.write("Initializing project...");
 
 	for (const stageFunc of STAGES) {
 		await stageFunc(state, options);
 	}
+
+	afterBuildProject(state, options);
 }

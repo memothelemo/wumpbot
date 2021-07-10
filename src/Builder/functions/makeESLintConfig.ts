@@ -35,7 +35,7 @@ export async function makeESLintConfig(
 		eslintConfig.extends.push("plugin:@typescript-eslint/recommended");
 	}
 
-	for (const rule of TemplateConstants.ESLINT_IGNORE_ENTRIES) {
+	for (const rule of TemplateConstants.ESLINT_CONFIG_RULES) {
 		eslintConfig.rules[rule] = "off";
 	}
 

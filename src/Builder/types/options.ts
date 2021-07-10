@@ -11,4 +11,5 @@ export interface InitCLIOptions {
 	prettier?: boolean;
 	eslint?: boolean;
 	packageManager?: PackageManagers;
+	nodemon?: boolean;
 }

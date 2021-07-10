@@ -9,14 +9,15 @@ async function modifyPkgJson(state: BuilderState, options: BuildOptions) {
 		pkgJSON.scripts = {
 			build: "tsc",
 			watch: "tsc --w",
-			start: "node .",
 		};
 		pkgJSON.main = "out/index.js";
 	} else {
-		pkgJSON.scripts = {
-			start: "node .",
-		};
 		pkgJSON.main = "src/index.js";
+	}
+	if (options.nodemon) {
+		pkgJSON.scripts["start"] = "npx nodemon .";
+	} else {
+		pkgJSON.scripts["start"] = "node .";
 	}
 	return await fs.outputFile(
 		state.paths.packageJSON,
